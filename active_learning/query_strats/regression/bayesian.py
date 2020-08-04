@@ -52,4 +52,3 @@ class ExpectedImprovement(IndividualScoreQueryStrategy):
         ei = (y_mean - threshold - self.epsilon) * norm.cdf(z_score) + y_std * norm.pdf(z_score)
 
         return ei
-
